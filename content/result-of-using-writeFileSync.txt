@@ -1,0 +1,8 @@
+Thanks You God for helping me to learn code. You are great God. Please.... God, I love You, but I know, and confess to You, that my love for You is severly lacking and is nowhere near how great and perfectly You love me. Thank You God for loving me better and more than I love You. You are awesome God. Lord Have Mercy On Me. 
+
+Here is the text from first.txt: Hello this is the first text file. 
+
+Here is the content from second.txt: Hello this is the second text file.
+
+This was Appended by setting the 3rd parameter, options object, to { flag: 'a' } which appends informaiton to an existing file.
+This was Appended by setting the 3rd parameter, options object, to { flag: 'a' } which appends informaiton to an existing file.
