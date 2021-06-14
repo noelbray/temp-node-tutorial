@@ -10,7 +10,7 @@
 // packages are also called: 
 // package(s)
 // module(s)
-// dependence(s)
+// dependency(ies)
 
 // There is no quality control for publishing packages so you have to figure out which ones are good and etc. 
 // A good indication of security, reliability, and such of a package is the number of weekly downloads it has. 
@@ -32,9 +32,9 @@
 // Install the latest stable version of npm globally:
 // npm install npm@latest -g
 
-// package.json - manifest file (stores important information about about project)
+// package.json - manifest file (stores important information about the project)
 // manual approach (create package.json in the root, create properties etc.)
-// npm init (step by step, press enter to skp)
+// npm init (step by step, press enter to skip)
 // npm init -y (everything default)
 
 // He says it's just quicker to run "npm init -y"
@@ -48,6 +48,9 @@ const items = [ 1, [2, [3, [4]]]];
 
 const newItems = _.flattenDeep(items);
 console.log(newItems);
+console.log('You are great God.');
+console.log('Nodemon is working.');
+console.log('Nodemon automatically runs the node app that was specified in the script object of the package.json file like so: "dev": "nodemon app.js".')
 
 // I ran into this powershell notification, error when trying to 
 // run "git init":
@@ -67,8 +70,5 @@ At line:1 char:1
    ectNotFound: (git:String) [],   
    CommandNotFoundException        
     + FullyQualifiedErrorId : Com  
-   mandNotFoundException
-*/
-
-// When ready, run the downloaded git program for windows, Git-2.31.1-64-bit.exe that is in the downloads folder, that finished downloading just a couple of minutes ago before 8:56 PM Thanks To God. Thank You God for getting that program to finally download for me.
-// You are great God.
+   mandNotFoundException 
+   */

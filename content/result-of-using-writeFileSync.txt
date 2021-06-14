@@ -6,3 +6,7 @@ Here is the content from second.txt: Hello this is the second text file.
 
 This was Appended by setting the 3rd parameter, options object, to { flag: 'a' } which appends informaiton to an existing file.
 This was Appended by setting the 3rd parameter, options object, to { flag: 'a' } which appends informaiton to an existing file.
+This was Appended by setting the 3rd parameter, options object, to { flag: 'a' } which appends informaiton to an existing file.
+This was Appended by setting the 3rd parameter, options object, to { flag: 'a' } which appends informaiton to an existing file.
+This was Appended by setting the 3rd parameter, options object, to { flag: 'a' } which appends informaiton to an existing file.
+This was Appended by setting the 3rd parameter, options object, to { flag: 'a' } which appends informaiton to an existing file.

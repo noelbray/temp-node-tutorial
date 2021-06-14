@@ -1,0 +1,22 @@
+In package.json, the package version system:
+
+"dependencies": {
+    "lodash": "^4.17.20"
+}
+
+First number:
+
+    is for Breaking, Major Changes... changes that can potentionally break your application.
+
+Second number: 
+
+    is for Minor Changes... that shouldn't break your app.
+
+Third number: 
+    
+    is a Patch, Bug Fix... or something of the sort and shouldn't break your app.
+
+For more information on package.json you can read:
+
+https://nodesource.com/blog/the-basics-of-package-json-in-node-js-and-npm/
+

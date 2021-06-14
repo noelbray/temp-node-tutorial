@@ -1,0 +1,19 @@
+You can install globally devDependencies or dependencies that you want every app you create to be able to access such as nodemon.
+
+You can install it in your terminal or you can do it in the integrated terminal; it doesn't really matter which fo these you install it at, with.
+
+When it comes to global packages, you can install it from anywhere. 
+
+npm install -g <package-name>
+
+ex: npm install -g nodemon
+
+It installs it in a location, I believe, that npm chose/specified.
+
+To find out where the "global packages are installed" run this command: 
+
+npm config get prefix 
+
+which yielded for me: 
+
+C:\Users\noelw\AppData\Roaming\npm

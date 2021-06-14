@@ -1,0 +1,26 @@
+Smilga added nodemon package as a dev dependency, developer dependency. 
+
+Developer Dependencies:
+- are the npm packages that developers use to help with creating the javascript app or some other app.
+- you don't upload, share them for the production app
+
+In production you only share the dependencies that are required for the app to work.
+
+Examples of such developer dependency packages you would add: 
+- testing packages
+- linting packages, linters
+- formatting
+- etc. such as the nodemon npm packge which  "is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected" so that you don't have to keep typing "node app.js" or "node app-name.js" to run the app in the browser or where-ever each time. 
+
+To Install nodemon or any developer dependency just type: 
+ 
+npm i nodemon -D 
+
+or 
+
+npm install nodemon --save-dev
+
+i is short for install
+-D is short for --save-dev
+
+Doing this will store the package information in the "devDependencies" property within an object within the package.json file.

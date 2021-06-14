@@ -1,0 +1,91 @@
+In the "script" property of the package.json file,
+you can add scripts.
+
+For example, to get the script to run automatically the app is started, opened:
+
+"scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "command-name": "command",
+    "another-command-name": "command",
+    "Command-name": "command"
+}
+
+Then, in your terminal you can type npm followed by the command name to run it. 
+But for developer, some command-names, commands, you have to type npm run command name to get it to work. But there is a second option for how to run nodemon too.
+
+npm start
+
+and press enter and the app will automatically run 1 time;
+
+for nodemon, 
+
+npm run dev
+
+and nodemon will run which will automatically run the node javascript app file that you specified by name such as app.js which was written in the scripts object of the package.json file: { dev: "nodemon app.js" }.
+
+Second option: 
+
+"scripts": {
+    "start": "nodemon app.js"
+}
+
+then all you have to do is run this code: 
+
+npm start
+
+and nodemon will automatically run; 
+this is similar to how react does it.
+
+Nodemon will automatically run the app upon saving fo the main app file, in this case app.js.
+
+To STOP a script:
+
+such as nodemon, just press
+
+ctrl c
+
+which will show as ^C 
+
+in the terminal.
+
+To uninstall a script: 
+
+npm uninstall nodemon
+
+and nodemon will be uninstalled and taken out of the devDependencies in package.json
+
+or 
+
+you can go to the package.json file and 
+just highlight and delete the "nodemon":"^2.0.7" that is located in the devDependencies in package.json.
+
+
+Nuclear uninstall approach (especially when using gatsby app):
+
+Manually delete the "node_modules" folder and the package-lock.json file.
+
+and then 
+
+delete the line of code your dependency is on, 
+e.g.: "bootstrap":"^4.6.0", from the package.json file
+
+and then type:
+
+npm install
+
+Nodemon is is installed globally on my computer at in this directory: 
+
+C:\Users\noelw\AppData\Roaming\npma
+
+to find out where globall packages are installed: 
+
+npm config get prefix
+
+to install packages globally: 
+
+npm install -g <package-name>:
+
+e.g.: npm install -g nodemon
+
+Now, nodemon will be accessible by all of your node apps.
