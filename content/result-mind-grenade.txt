@@ -1,0 +1,9 @@
+THIS IS AWESOME !!!! 
+
+Here is first.txt's text:
+
+Hello this is the first text file.
+
+And Here is second.txt's text:
+
+Hello this is the second text file.
