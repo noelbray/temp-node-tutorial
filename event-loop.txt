@@ -1,0 +1,42 @@
+"The event loop is what allows Node.js to perform non-blocking I/O operations -- despite the fact that JavaScript is single-threaded -- by offloading operations to the syster kernel whenever possible." Node Docs.
+
+His slides are on: https://course-api.com/
+
+JS reads everything line by line - single threaded. (time consuming);
+
+Offloading: 
+
+    Running code, script in the browser for Browser javascript apps. 
+
+    The callback only executes after the task is done.
+
+        ex: fetch, setTimeout
+
+    Initially the event loop just registers the callback, doesn't run it and when the operation is complete, runs it.
+
+    Immediate code is runs first. 
+
+    callback, asynchronous code gets put a the end of the line and runs after the immediate code is run.
+
+You can't offload the portal.
+
+For more information about iNode JS The Event Loop: 
+
+Read: 
+
+    Node Js Event Loop: 
+
+        https://nodejs.dev/learn/the-nodejs-event-loop
+
+Watch: 
+
+    Morning Keynote-Everything You Need to Know ABout Node.js Event Loop - Bert Belder, IBM:
+
+        https://www.youtube.com/watch?v=PNa9OMajw9w
+
+    JS Event Loop:
+
+    What the heck is the event loop anyway? | Philip Roberts | JSConf EU
+        
+        https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
