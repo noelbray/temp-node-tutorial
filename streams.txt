@@ -1,0 +1,16 @@
+Streams are used to Read or Write sequentially.
+
+Manipulate streaming data such as a continuous source or a big file.
+
+1. Writeable
+
+2. Readable
+
+3. Duplex (Read and Write)
+
+4. Transform (data can be modified when reading or writing)
+
+Streams extend Event Emitters Class. 
+
+
+
