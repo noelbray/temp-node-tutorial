@@ -1,0 +1,14 @@
+http-messages: 
+Everytime you, user type in an url address, you're are performing a request to the server that is responsible for serving those resources and the server sends back the http response method.
+
+A server is just a computer whose job is to always make that resource, data available.
+
+Cloud is just a bunch of servers, computers that are connected.
+
+Headers are meta-information.
+
+Most of the time we are getting back the json data:
+Header:
+Content-Type: application/json; charset=utf-8
+
+If you want to see the slides for this: https://course-api.com/
