@@ -1,0 +1,12 @@
+Example: user clicks a button and our program handles it.
+
+Event Driven Programming: program driven by external, user generated events or other events.
+
+GUI: Graphical User Interface.
+
+Server Side Events: 
+
+Event Driven Programming is used heavily in Node.js. 
+
+Once an event takes place, a callback, program fires.
+
