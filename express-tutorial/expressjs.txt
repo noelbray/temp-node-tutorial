@@ -1,0 +1,17 @@
+Express JS:
+
+Minimalist web framework for Node.JS
+
+It's not built into Node JS but it is pretty much a standard.
+
+npm install express --save
+
+--save is not needed anymore, but you can use --save if you want to, it wont hurt anything.
+
+When you run "npm install express" you will get the latest version on, from npm.
+
+To install a certain version of a package: 
+
+npm install <pkg-name>@<pkg-version-number> --save
+
+E.g.: npm install express@4.17.1 --save
