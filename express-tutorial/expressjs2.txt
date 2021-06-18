@@ -1,0 +1,21 @@
+Use Express in 2 Ways:
+
+1. to setup API
+
+    - API in this case means to setup up an 'http interface to interact with our data."
+
+    - data is sent in JSON (Javscript Object Notation)
+
+    - res.json() will do all the heavy lifting.
+
+    - The server provides data, any content app simply accesses the data and servers it.
+
+    - Were responsible for setting up the user interface and sending back the data.
+
+2. to setup templates with SSR
+
+    - set up templates
+    
+    - send back the templates
+
+    - res.render() will take care of this
