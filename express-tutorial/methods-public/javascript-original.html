@@ -38,87 +38,47 @@
         <div class="result"></div>
       </section>
     </main>
-    <!-- 
-
-      Axios-http:
-      Getting Started With Axios:
-      https://axios-http.com/docs/intro
-      
-      John said that Axios is similar to fetch, built-in JS, method but handles errors and etc better.
-      
-      "Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic (= it can run in the browser and nodejs with the same codebase). On the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests."
-
-      This is a front-end project so all the javascript for it is in here.
-
-      Just type in "Axios" on cdnjs to get the link to put in the src attribute of the front-end script:
-      https://cdnjs.com/
-    -->
+    <!-- src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
       integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
       crossorigin="anonymous"
     ></script>
-    
     <script>
-      // Selecting the element with class result:
       const result = document.querySelector('.result')
 
       const fetchPeople = async () => {
         try {
-          // Fetch people from server: 
-          // Axios "get" method performs a get request on the front-end:
-          // make sure the route, path for get or any other http method matches with the actual route.
-          // He says that Axios.get returns a giant object and in that object we are interested in the "data" property which is the response from the server.
-          const { data } = await axios.get('/api/people');
+          const { data } = await axios.get('/api/people')
 
-          console.log("data", data);
           const people = data.data.map((person) => {
-            // console.log("person.name", person.name);
             return `<h5>${person.name}</h5>`
-          });
-          // console.log ("people", people);
+          })
           result.innerHTML = people.join('')
-        } 
-        catch (error) {
+        } catch (error) {
           result.innerHTML = `<div class="alert alert-danger">Can't Fetch Data</div>`
         }
       }
-
-      // invoke the async fetchPeople function which will be waiting the axios.post method to "post" the information upon click of the submit button so that it can "get, fetch" the information.
       fetchPeople()
-
       // submit form
       const btn = document.querySelector('.submit-btn')
       const input = document.querySelector('.form-input')
       const formAlert = document.querySelector('.form-alert')
-
       btn.addEventListener('click', async (e) => {
         e.preventDefault()
         const nameValue = input.value
 
-        // try and catch block
         try {
-
-          // the moment the user submits the form, axios.post will post the information and the async fetchPeople function will get it. 
           const { data } = await axios.post('/api/people', { name: nameValue })
           const h5 = document.createElement('h5')
-
-          // I think my internet connection might be causing the problem. Because sometimes his original code "h5.textContent = data.person works and sometimes it doesn't."
-
-          // h5.textContent = data.person; // His origin
-          h5.textContent = data.person.name; // This works
-          // h5.textContent = JSON.stringify(data.person.name)
-          // h5.textContent = JSON.stringify(data.person);
-          console.log("data.person", data.person);
+          h5.textContent = data.person
           result.appendChild(h5)
-        } 
-        catch (error) {
+        } catch (error) {
           // console.log(error.response)
           formAlert.textContent = error.response.data.msg
         }
         input.value = ''
       })
     </script>
-   
   </body>
 </html>

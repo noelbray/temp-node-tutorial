@@ -1,0 +1,37 @@
+Postman
+    https://www.postman.com
+    https://www.postman.com/downloads/
+
+In, with postman you can test your routes by clicking the type of method you route uses and typing in the local route for that method:
+
+GET Request Example Steps:
+
+1st: Make sure your app.js is running on the port you want by manually activating it "node app.js" or with nodemon script you created which could be "npm start" in the package.json file.
+
+2nd: Open up "myworkspace" hit the "+" symbol.
+
+3rd: Select "Get": type "localhost:port-number/route"; Click "Send"
+
+4th: Click any of the tabs near the bottom, (Body, Cookies, Headers, Test Results) to see the corresponding data or information.
+
+Click the Body Tab/button that is next to Cookies, Headers, Test Results tab to see what your route is doing, producing.
+
+POST Example Steps:
+
+1st: Make sure your app.js is running on the port you want by manually activating it "node app.js" or with nodemon script you created which could be "npm start" in the package.json file.
+
+2nd: Open up "myworkspace" hit the "+" symbol.
+
+3rd: Click the "Body" tab directly under the Methd-local-url-input-send-button.
+
+4th: Click the "raw" radio input, when the "Text" select, dropdown appears, click it and select "JSON".
+
+5th: Select "POST": type "localhost:port-number/route"; Click "Send"
+
+6th: Then type something like this in the textbox, text-editor under the "raw" radio button and the "JSON" option that was selected: 
+
+Note (Remember that with JSON, we need to use double quotation marks: example: "Key": "value" for objects and "value" for arrays)
+
+{
+
+}
